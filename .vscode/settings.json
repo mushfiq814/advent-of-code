@@ -1,9 +1,0 @@
-{
-	"files.associations": {
-		"*.dj": "java",
-		"*.dism": "asm",
-		"*.fm": "fmlang",
-		"*.calc": "fmlang",
-		"ostream": "cpp"
-	}
-}
