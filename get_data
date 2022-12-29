@@ -1,0 +1,14 @@
+#!/bin/sh
+
+YEAR="$1"
+DAY="$2"
+COOKIE="_ga=GA1.2.1224876860.1672270430; _gid=GA1.2.588030627.1672270430; session=53616c7465645f5f5f3fd5293152520823c333221ea9388ef9b7e4bab29d1c077391e9762c3423020757da9ed0dc052806184dda3a57a3f38586a48da1c51b10; _gat=1"
+
+mkdir -p aoc-$YEAR/day-$DAY
+
+curl "https://adventofcode.com/$YEAR/day/$DAY" > $DAY.html
+pandoc -f html -t commonmark $DAY.html > aoc-$YEAR/day-$DAY/question.md
+rm $DAY.html
+
+curl --cookie "$COOKIE" "https://adventofcode.com/$YEAR/day/$DAY/input" \
+  > aoc-$YEAR/day-$DAY/input.txt
