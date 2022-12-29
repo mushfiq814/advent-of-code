@@ -250,10 +250,3 @@ Figure out which monkeys to chase by counting how many items they
 inspect over 20 rounds. *What is the level of monkey business after 20
 rounds of stuff-slinging simian shenanigans?*
 
-To play, please identify yourself via one of these services:
-
-[\[GitHub\]](/auth/github) [\[Google\]](/auth/google)
-[\[Twitter\]](/auth/twitter) [\[Reddit\]](/auth/reddit) <span
-class="quiet">- [\[How Does Auth Work?\]](/about#faq_auth)</span>
-
-</div>

@@ -54,10 +54,3 @@ This path reaches the goal in *`31`* steps, the fewest possible.
 *What is the fewest steps required to move from your current position to
 the location that should get the best signal?*
 
-To play, please identify yourself via one of these services:
-
-[\[GitHub\]](/auth/github) [\[Google\]](/auth/google)
-[\[Twitter\]](/auth/twitter) [\[Reddit\]](/auth/reddit) <span
-class="quiet">- [\[How Does Auth Work?\]](/about#faq_auth)</span>
-
-</div>

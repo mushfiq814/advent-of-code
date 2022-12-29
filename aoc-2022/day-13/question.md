@@ -141,10 +141,3 @@ sum of these indices is *`13`*.
 Determine which pairs of packets are already in the right order. *What
 is the sum of the indices of those pairs?*
 
-To play, please identify yourself via one of these services:
-
-[\[GitHub\]](/auth/github) [\[Google\]](/auth/google)
-[\[Twitter\]](/auth/twitter) [\[Reddit\]](/auth/reddit) <span
-class="quiet">- [\[How Does Auth Work?\]](/about#faq_auth)</span>
-
-</div>

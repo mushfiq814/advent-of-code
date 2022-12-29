@@ -262,10 +262,3 @@ Simulate the Elves' process and find the smallest rectangle that
 contains the Elves after 10 rounds. *How many empty ground tiles does
 that rectangle contain?*
 
-To play, please identify yourself via one of these services:
-
-[\[GitHub\]](/auth/github) [\[Google\]](/auth/google)
-[\[Twitter\]](/auth/twitter) [\[Reddit\]](/auth/reddit) <span
-class="quiet">- [\[How Does Auth Work?\]](/about#faq_auth)</span>
-
-</div>

@@ -65,10 +65,3 @@ this is *`24000`* (carried by the fourth Elf).
 Find the Elf carrying the most Calories. *How many total Calories is
 that Elf carrying?*
 
-To play, please identify yourself via one of these services:
-
-[\[GitHub\]](/auth/github) [\[Google\]](/auth/google)
-[\[Twitter\]](/auth/twitter) [\[Reddit\]](/auth/reddit) <span
-class="quiet">- [\[How Does Auth Work?\]](/about#faq_auth)</span>
-
-</div>

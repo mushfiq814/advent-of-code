@@ -227,10 +227,3 @@ The sum of these signal strengths is *`13140`*.
 Find the signal strength during the 20th, 60th, 100th, 140th, 180th, and
 220th cycles. *What is the sum of these six signal strengths?*
 
-To play, please identify yourself via one of these services:
-
-[\[GitHub\]](/auth/github) [\[Google\]](/auth/google)
-[\[Twitter\]](/auth/twitter) [\[Reddit\]](/auth/reddit) <span
-class="quiet">- [\[How Does Auth Work?\]](/about#faq_auth)</span>
-
-</div>

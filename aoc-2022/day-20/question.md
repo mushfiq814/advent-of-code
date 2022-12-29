@@ -80,10 +80,3 @@ together produces *`3`*.
 Mix your encrypted file exactly once. *What is the sum of the three
 numbers that form the grove coordinates?*
 
-To play, please identify yourself via one of these services:
-
-[\[GitHub\]](/auth/github) [\[Google\]](/auth/google)
-[\[Twitter\]](/auth/twitter) [\[Reddit\]](/auth/reddit) <span
-class="quiet">- [\[How Does Auth Work?\]](/about#faq_auth)</span>
-
-</div>

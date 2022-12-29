@@ -158,10 +158,3 @@ the path any new sand takes before falling forever is shown here with
 Using your scan, simulate the falling sand. *How many units of sand come
 to rest before sand starts flowing into the abyss below?*
 
-To play, please identify yourself via one of these services:
-
-[\[GitHub\]](/auth/github) [\[Google\]](/auth/google)
-[\[Twitter\]](/auth/twitter) [\[Reddit\]](/auth/reddit) <span
-class="quiet">- [\[How Does Auth Work?\]](/about#faq_auth)</span>
-
-</div>

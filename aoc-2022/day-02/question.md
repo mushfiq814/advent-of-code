@@ -58,10 +58,3 @@ a total score of *`15`* (8 + 1 + 6).
 *What would your total score be if everything goes exactly according to
 your strategy guide?*
 
-To play, please identify yourself via one of these services:
-
-[\[GitHub\]](/auth/github) [\[Google\]](/auth/google)
-[\[Twitter\]](/auth/twitter) [\[Reddit\]](/auth/reddit) <span
-class="quiet">- [\[How Does Auth Work?\]](/about#faq_auth)</span>
-
-</div>

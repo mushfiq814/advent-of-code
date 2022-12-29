@@ -150,10 +150,3 @@ Reversing the process, you can determine that for the decimal number
 The Elves are starting to get cold. *What SNAFU number do you supply to
 Bob's console?*
 
-To play, please identify yourself via one of these services:
-
-[\[GitHub\]](/auth/github) [\[Google\]](/auth/google)
-[\[Twitter\]](/auth/twitter) [\[Reddit\]](/auth/reddit) <span
-class="quiet">- [\[How Does Auth Work?\]](/about#faq_auth)</span>
-
-</div>

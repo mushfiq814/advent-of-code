@@ -66,10 +66,3 @@ However, your actual situation involves <span
 title="Advent of Code 2022: Now With Considerably More Monkeys">considerably
 more monkeys</span>. *What number will the monkey named `root` yell?*
 
-To play, please identify yourself via one of these services:
-
-[\[GitHub\]](/auth/github) [\[Google\]](/auth/google)
-[\[Twitter\]](/auth/twitter) [\[Reddit\]](/auth/reddit) <span
-class="quiet">- [\[How Does Auth Work?\]](/about#faq_auth)</span>
-
-</div>

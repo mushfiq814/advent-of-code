@@ -113,10 +113,3 @@ the final facing is `0`. So, the final password is 1000 \* 6 + 4 \* 8 +
 Follow the path given in the monkeys' notes. *What is the final
 password?*
 
-To play, please identify yourself via one of these services:
-
-[\[GitHub\]](/auth/github) [\[Google\]](/auth/google)
-[\[Twitter\]](/auth/twitter) [\[Reddit\]](/auth/reddit) <span
-class="quiet">- [\[How Does Auth Work?\]](/about#faq_auth)</span>
-
-</div>

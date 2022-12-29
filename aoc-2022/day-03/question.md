@@ -59,10 +59,3 @@ compartments of each rucksack is 16 (`p`), 38 (`L`), 42 (`P`), 22 (`v`),
 Find the item type that appears in both compartments of each rucksack.
 *What is the sum of the priorities of those item types?*
 
-To play, please identify yourself via one of these services:
-
-[\[GitHub\]](/auth/github) [\[Google\]](/auth/google)
-[\[Twitter\]](/auth/twitter) [\[Reddit\]](/auth/reddit) <span
-class="quiet">- [\[How Does Auth Work?\]](/about#faq_auth)</span>
-
-</div>

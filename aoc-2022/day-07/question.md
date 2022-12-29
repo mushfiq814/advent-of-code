@@ -113,10 +113,3 @@ files more than once!)
 Find all of the directories with a total size of at most 100000. *What
 is the sum of the total sizes of those directories?*
 
-To play, please identify yourself via one of these services:
-
-[\[GitHub\]](/auth/github) [\[Google\]](/auth/google)
-[\[Twitter\]](/auth/twitter) [\[Reddit\]](/auth/reddit) <span
-class="quiet">- [\[How Does Auth Work?\]](/about#faq_auth)</span>
-
-</div>

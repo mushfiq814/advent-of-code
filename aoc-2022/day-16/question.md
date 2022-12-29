@@ -177,10 +177,3 @@ with this valve layout, *`1651`*.
 Work out the steps to release the most pressure in 30 minutes. *What is
 the most pressure you can release?*
 
-To play, please identify yourself via one of these services:
-
-[\[GitHub\]](/auth/github) [\[Google\]](/auth/google)
-[\[Twitter\]](/auth/twitter) [\[Reddit\]](/auth/reddit) <span
-class="quiet">- [\[How Does Auth Work?\]](/about#faq_auth)</span>
-
-</div>

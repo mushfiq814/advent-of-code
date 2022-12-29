@@ -367,10 +367,3 @@ will be *`3068`* units tall.
 *How many units tall will the tower of rocks be after 2022 rocks have
 stopped falling?*
 
-To play, please identify yourself via one of these services:
-
-[\[GitHub\]](/auth/github) [\[Google\]](/auth/google)
-[\[Twitter\]](/auth/twitter) [\[Reddit\]](/auth/reddit) <span
-class="quiet">- [\[How Does Auth Work?\]](/about#faq_auth)</span>
-
-</div>

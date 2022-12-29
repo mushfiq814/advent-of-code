@@ -133,10 +133,3 @@ where a beacon cannot be present.
 Consult the report from the sensors you just deployed. *In the row where
 `y=2000000`, how many positions cannot contain a beacon?*
 
-To play, please identify yourself via one of these services:
-
-[\[GitHub\]](/auth/github) [\[Google\]](/auth/google)
-[\[Twitter\]](/auth/twitter) [\[Reddit\]](/auth/reddit) <span
-class="quiet">- [\[How Does Auth Work?\]](/about#faq_auth)</span>
-
-</div>

@@ -202,10 +202,3 @@ Determine the quality level of each blueprint using the largest number
 of geodes it could produce in 24 minutes. *What do you get if you add up
 the quality level of all of the blueprints in your list?*
 
-To play, please identify yourself via one of these services:
-
-[\[GitHub\]](/auth/github) [\[Google\]](/auth/google)
-[\[Twitter\]](/auth/twitter) [\[Reddit\]](/auth/reddit) <span
-class="quiet">- [\[How Does Auth Work?\]](/about#faq_auth)</span>
-
-</div>
