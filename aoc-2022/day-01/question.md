@@ -23,7 +23,7 @@ number of *Calories* each Elf is carrying (your puzzle input).
 
 The Elves take turns writing down the number of Calories contained by
 the various meals, snacks, rations, <span
-title="By &quot;etc&quot;, you're pretty sure they just mean &quot;more snacks&quot;.">etc.</span>
+title="By 'etc', you're pretty sure they just mean 'more snacks'.">etc.</span>
 that they've brought with them, one item per line. Each Elf separates
 their own inventory from the previous Elf's inventory (if any) by a
 blank line.
