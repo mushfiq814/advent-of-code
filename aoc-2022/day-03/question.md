@@ -1,11 +1,9 @@
-## --- Day 3: Rucksack Reorganization ---
+## Day 3: Rucksack Reorganization
 
-One Elf has the important job of loading all of the
-<a href="https://en.wikipedia.org/wiki/Rucksack"
-target="_blank">rucksacks</a> with supplies for the <span
-title="Where there's jungle, there's hijinxs.">jungle</span> journey.
-Unfortunately, that Elf didn't quite follow the packing instructions,
-and so a few items now need to be rearranged.
+One Elf has the important job of loading all of the rucksacks with
+supplies for the jungle journey. Unfortunately, that Elf didn't quite
+follow the packing instructions, and so a few items now need to be
+rearranged.
 
 Each rucksack has two large *compartments*. All items of a given type
 are meant to go into exactly one of the two compartments. The Elf that
