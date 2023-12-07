@@ -10,10 +10,15 @@ import (
 	"example.com/mushfiq814/advent-of-code/aoc-2023/day-1/part-2"
 	"example.com/mushfiq814/advent-of-code/aoc-2023/day-2/part-1"
 	"example.com/mushfiq814/advent-of-code/aoc-2023/day-2/part-2"
+	"example.com/mushfiq814/advent-of-code/aoc-2023/day-3/part-1"
 )
 
 func main() {
-	day2_part2(false)
+	// day1_part1(true)
+	// day1_part2(true)
+	// day2_part1(true)
+	// day2_part2(true)
+	day3_part1(false)
 }
 
 func readInput(day int, part int, test bool) []string {
@@ -32,7 +37,9 @@ func readInput(day int, part int, test bool) []string {
 		panic(err)
 	}
 
-	return strings.Split(string(file), "\n")
+	// remove ending newline
+	lines := strings.Split(string(file), "\n")
+	return lines[:len(lines)-1]
 }
 
 func day1_part1(test bool) {
@@ -54,7 +61,13 @@ func day2_part1(test bool) {
 }
 
 func day2_part2(test bool) {
-	lines := readInput(2, 1, test)
+	lines := readInput(2, 2, test)
 	score := d2p2.TotalScore(lines)
+	fmt.Println(score)
+}
+
+func day3_part1(test bool) {
+	lines := readInput(3, 1, test)
+	score := d3p1.TotalScore(lines)
 	fmt.Println(score)
 }
