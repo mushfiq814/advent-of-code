@@ -1,6 +1,7 @@
 package d3p1
 
 import (
+	"example.com/mushfiq814/advent-of-code/aoc-2023/day-3"
 	"regexp"
 	"strconv"
 	"strings"
@@ -29,7 +30,8 @@ func GetGoodPartNums(s []string) []int {
 
 			// calculate boundary for part number and check whether it has a special
 			// boundary (containing any char other than digits or .)
-			boundary := CalculateBoundary(s, digitIndex[0]-1, digitIndex[1], row)
+			L, R, TB := d3lib.CalculateBoundary(s, digitIndex[0]-1, digitIndex[1], row)
+			boundary := L + R + TB
 			hasSpecialBoundary := strings.Count(boundary, ".") != len(boundary)
 
 			if hasSpecialBoundary {
@@ -38,31 +40,4 @@ func GetGoodPartNums(s []string) []int {
 		}
 	}
 	return result
-}
-
-func CalculateBoundary(s []string, left int, right int, center int) string {
-	boundary := ""
-
-	if left >= 0 {
-		boundary += s[center][left : left+1]
-	}
-	if right+1 <= len(s[center]) {
-		boundary += s[center][right : right+1]
-	}
-
-	for _, r := range []int{center - 1, center + 1} {
-		adjustedLeft := left
-		adjustedRight := right
-		if r >= 0 && r < len(s) {
-			if left < 0 {
-				adjustedLeft = 0
-			}
-			if right+1 > len(s[r]) {
-				adjustedRight = len(s[r]) - 1
-			}
-			boundary += s[r][adjustedLeft : adjustedRight+1]
-		}
-	}
-
-	return boundary
 }
