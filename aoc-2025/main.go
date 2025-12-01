@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	day1_part1(true)
+	day1_part1(false)
 }
 
 func readInput(day int, part int, test bool) []string {
