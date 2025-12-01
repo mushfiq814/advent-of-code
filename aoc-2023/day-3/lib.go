@@ -1,5 +1,12 @@
 package d3lib
 
+// CalculateBoundary returns the left, right and top+bottom lines of strings
+// that bounds a given substr inside the input s. This substr is defined by
+// left, right and center.
+//
+// left is the left index (exclusive) of chars to calculate boundary of.
+// right is right index (exclusive) of chars to calculate boundary of.
+// center is index of row containing chars to calculate boundary of.
 func CalculateBoundary(
 	s []string,
 	left int,
