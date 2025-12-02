@@ -7,10 +7,12 @@ import (
 	"strings"
 
 	"example.com/mushfiq814/advent-of-code/aoc-2025/day-1/part-1"
+	"example.com/mushfiq814/advent-of-code/aoc-2025/day-1/part-2"
 )
 
 func main() {
 	day1_part1(false)
+	day1_part2(false)
 }
 
 func readInput(day int, part int, test bool) []string {
@@ -37,5 +39,11 @@ func readInput(day int, part int, test bool) []string {
 func day1_part1(test bool) {
 	lines := readInput(1, 1, test)
 	score := d1p1.TotalScore(lines)
+	fmt.Println(score)
+}
+
+func day1_part2(test bool) {
+	lines := readInput(1, 2, test)
+	score := d1p2.TotalScore(lines)
 	fmt.Println(score)
 }
