@@ -34,14 +34,17 @@ func FactorsOf(num int) []int {
 		return []int{1}
 	}
 
+	// 1 is a factor for all other numbers
 	res := []int{1}
 
-	for i := 2; i < num; i++ {
+	// test numbers halfway up to the number
+	for i := 2; i <= num / 2; i++ {
 		if num%i == 0 {
 			res = append(res, i)
 		}
 	}
 
+	// the number itself is a factor
 	res = append(res, num)
 
 	return res
