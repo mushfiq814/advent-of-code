@@ -10,16 +10,16 @@ func TotalScore(lines []string) int {
 
 	for _, line := range lines {
 		steps, _ := strconv.Atoi(line[1:])
-		initial_dial := dial
-
-		if line[0:1] == "L" {
+		if line[0] == 'L' {
 			steps = -steps
 		}
-		dial = dial + steps
 
-		increment := Absolute(dial/100 - initial_dial/100)
-		count = count + increment
-		if HasPassedZero(initial_dial, dial) {
+		initial_dial := dial
+		dial += steps
+
+		count += Absolute(dial / 100)
+
+		if (initial_dial > 0 && dial <= 0) || (initial_dial == 0 && dial == 0) {
 			count++
 		}
 
@@ -27,6 +27,13 @@ func TotalScore(lines []string) int {
 	}
 
 	return count
+}
+
+func Absolute(num int) int {
+	if num < 0 {
+		return -num
+	}
+	return num
 }
 
 func MapToRealDial(dial int) int {
@@ -42,16 +49,3 @@ func MapToRealDial(dial int) int {
 
 	return dial
 }
-
-func Absolute(num int) int {
-	if num < 0 {
-		return -num
-	}
-	return num
-}
-
-func HasPassedZero(start int, end int) bool {
-	return end == 0 || (start < 0 && end > 0) || (start > 0 && end < 0)
-}
-
-// 5594 - 6905
