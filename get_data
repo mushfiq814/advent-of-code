@@ -2,6 +2,7 @@
 
 YEAR="$1"
 DAY="$2"
+TEMPLATE="$3"
 
 COOKIE=$(cat ".cookie")
 
@@ -18,3 +19,7 @@ rm "$DAY.html"
 
 curl --cookie "$COOKIE" "https://adventofcode.com/$YEAR/day/$DAY/input" \
   > "aoc-$YEAR/day-$DAY/input.txt"
+
+if [[ "$TEMPLATE" == "go" ]]; then
+  cp ./templates/go/*.go "aoc-$YEAR/day-$DAY/"
+fi
