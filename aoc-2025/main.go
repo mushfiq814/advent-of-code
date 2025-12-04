@@ -20,7 +20,7 @@ func main() {
 	day2_part1(false)
 	day2_part2(false)
 	day3_part1(false)
-	day3_part2(true)
+	day3_part2(false)
 }
 
 func readInput(day int, part int, test bool) []string {
