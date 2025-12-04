@@ -1,6 +1,6 @@
 module example.com/mushfiq814/advent-of-code/aoc-2025
 
-go 1.21.4
+go 1.24.0
 
 require github.com/stretchr/testify v1.10.0
 

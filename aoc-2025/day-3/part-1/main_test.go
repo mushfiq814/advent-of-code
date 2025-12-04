@@ -10,10 +10,10 @@ func TestMaximumJoltage(t *testing.T) {
 	assert.Equal(t, 89, MaximumJoltage("811111111111119"))
 	assert.Equal(t, 78, MaximumJoltage("234234234234278"))
 	assert.Equal(t, 92, MaximumJoltage("818181911112111"))
+	assert.Equal(t, 55, MaximumJoltage("42253334533322223423331322353"))
 }
 
 func TestScore(t *testing.T) {
-	t.Skip()
 	assert.Equal(
 		t,
 		357,
