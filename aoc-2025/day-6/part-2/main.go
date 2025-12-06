@@ -7,45 +7,56 @@ import (
 
 func TotalScore(lines []string) int {
 	score := 0
-	var res int
+	var answer int
 	var op rune
+	rows := len(lines)
 
-	for j := 0; j < len(lines[0]); j++ {
-
-		op_str := lines[len(lines)-1][j]
+	// iterate through columns
+	for col := 0; col < len(lines[0]); col++ {
+		op_str := lines[rows-1][col]
 		switch op_str {
 		case '+':
-			score += res
-			res = 0
+			answer = 0
 			op = '+'
 		case '*':
-			score += res
-			res = 1
+			answer = 1
 			op = '*'
 		}
 
-		y := 0
-		pos := 0
-		for i := len(lines) - 2; i >= 0; i-- {
-			num_str := string(lines[i][j])
+		num := 0
+		decimal_place := 0
+		// iterate through rows bottom up
+		for i := rows - 2; i >= 0; i-- {
+			num_str := string(lines[i][col])
+
+			// ignore if no number
 			if num_str == " " {
 				continue
 			}
-			d, _ := strconv.Atoi(num_str)
-			y += d * int(math.Pow(10, float64(pos)))
-			pos++
+
+			// build number
+			digit, _ := strconv.Atoi(num_str)
+			num += digit * int(math.Pow(10, float64(decimal_place)))
+
+			// proceed to next decimal place
+			decimal_place++
 		}
 
-		if y != 0 {
-			if op == '+' {
-				res += y
-			} else {
-				res *= y
-			}
+		// ignore if number is zero (default)
+		if num == 0 {
+			score += answer
+			continue
+		}
+
+		if op == '+' {
+			answer += num
+		} else {
+			answer *= num
 		}
 	}
 
-	score += res
+	// final update of score for the end
+	score += answer
 
 	return score
 }
