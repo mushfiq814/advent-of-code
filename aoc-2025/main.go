@@ -18,6 +18,7 @@ import (
 	"example.com/mushfiq814/advent-of-code/aoc-2025/day-5/part-2"
 	"example.com/mushfiq814/advent-of-code/aoc-2025/day-6/part-1"
 	"example.com/mushfiq814/advent-of-code/aoc-2025/day-6/part-2"
+	"example.com/mushfiq814/advent-of-code/aoc-2025/day-7/part-1"
 )
 
 func main() {
@@ -33,6 +34,7 @@ func main() {
 	day5_part2(false)
 	day6_part1(false)
 	day6_part2(false)
+	day7_part1(false)
 }
 
 func readInput(day int, part int, test bool) []string {
@@ -125,5 +127,11 @@ func day6_part1(test bool) {
 func day6_part2(test bool) {
 	lines := readInput(6, 2, test)
 	score := d6p2.TotalScore(lines)
+	fmt.Println(score)
+}
+
+func day7_part1(test bool) {
+	lines := readInput(7, 1, test)
+	score := d7p1.TotalScore(lines)
 	fmt.Println(score)
 }
