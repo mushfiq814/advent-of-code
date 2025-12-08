@@ -15,11 +15,25 @@ type Point struct {
 
 func TotalScore(lines []string) int {
 	score := 0
-	fmt.Println("TODO")
 
+	points := []Point{}
 	for _, line := range lines {
-		fmt.Println(line)
+		points = append(points, ParseCoordsToPoints(line))
 	}
+
+	distance_grid := MakeDistanceGrid(len(lines))
+	for i := range lines {
+		for j := range lines {
+			if i == j {
+				distance_grid[i][j] = 0
+				continue
+			}
+			// TODO: memoize + use matrix symmetry
+			distance_grid[i][j] = Distance(points[i], points[j])
+		}
+	}
+
+	fmt.Println(distance_grid)
 
 	return score
 }
@@ -38,4 +52,13 @@ func Distance(p1 Point, p2 Point) float64 {
 	y := math.Pow(float64(p1.y-p2.y), 2)
 	z := math.Pow(float64(p1.z-p2.z), 2)
 	return math.Sqrt(x + y + z)
+}
+
+func MakeDistanceGrid(n int) [][]float64 {
+	distance_grid := make([][]float64, n)
+	rows := make([]float64, n*n)
+	for i := range n {
+		distance_grid[i] = rows[i*n : (i+1)*n]
+	}
+	return distance_grid
 }

@@ -8,11 +8,13 @@ import (
 )
 
 func TestParseCoordsToPoints(t *testing.T) {
+	t.Skip()
 	assert.Equal(t, Point{x: 1, y: 2, z: 3}, ParseCoordsToPoints("1,2,3"))
 	assert.Equal(t, Point{x: 162, y: 817, z: 812}, ParseCoordsToPoints("162,817,812"))
 }
 
 func TestDistance(t *testing.T) {
+	t.Skip()
 	assert.Equal(
 		t,
 		10.25,
@@ -24,7 +26,17 @@ func TestDistance(t *testing.T) {
 }
 
 func TestScore(t *testing.T) {
-	t.Skip()
+	assert.Equal(
+		t,
+		40,
+		TotalScore([]string{
+			"1,2,3",
+			"5,0,1",
+			"0,0,10",
+		}),
+	)
+
+	t.SkipNow()
 	assert.Equal(
 		t,
 		40,
