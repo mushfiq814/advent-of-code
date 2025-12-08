@@ -1,0 +1,27 @@
+.......S....... |  N | L |
+.......|....... |  1 | 1 |
+.......^....... |    |   |
+......|.|...... |  2 | 2 | P0L P0R
+......^.^...... |    |   |  1   1
+.....|.|.|..... |  4 | 3 | P0L P0R+P1L P1R
+.....^.^.^..... |    |   |  1     2     1
+....|.|.|.|.... |  8 | 4 | P0L P0R+P1L P1R+P2L P2R
+....^.^.|.^.... |    |   |  1   1 + 2   2 + 1   1
+...|.|.|||.|... | 13 | 6 | P0L P0R+P1L P1R P2_ P3L P3R
+...^.^.||^.^... |    |   |  1   1 + 3   3   3   1   1
+..|.|.|||.|.|.. | 20 | 7 | P0L P0R+P1L P1R P2_ P3_+P4L P4R+P5L P5R
+..^.|.^||.|.^.. |    |   |  1   1 + 4   4   3   3 + 1   1 + 1   1
+.|.|||.||.||.|. | 26 | 9 | P0L P0R P1_ P2L P2R+P3_ P4_ P5_ P6L P6R
+.^.^|^.^|^||.^. |    |   |  1   1   5   4   4 + 3   4   2   1   1
+|.|.|.|.|.|||.| | 40 | 9 | P0L P0R+P1L P1R+P2_+P3L P3R+P4L P4R+P5_ P6_ P7_ P8L P8R
+                |    |   |  1   1 + 1   1 + 5 + 4   4 + 7   7 + 4   2   1   1   1
+
+Combinations
+
+ 2:[{L} {R}]
+ 4:[{LL} {LR RL} {RR}]
+ 8:[{LLL} {LLR LRL RLL} {LRR RLR RRL} {RRR}]
+13:[{LLLL} {LLLR LLRL LRLL RLLL} {LLRR LRLR RLLR} {LRR_ RLR_ RRL_} {RRRL} {RRRR}]
+20:[{LLLLL} {LLLLR LLLRL LLRLL LRLLL RLLLL} {LLLRR LLRLR LRLLR RLLLR} {LLRR_ LRLR_ RLLR_} {LRR__ RLR__ RRL__ RRRLL} {RRRLR RRRRL} {RRRRR}]
+26:[{LLLLLL} {LLLLLR} {LLLLR_ LLLRL_ LLRLL_ LRLLL_ RLLLL_} {LLLRRL LLRLRL LRLLRL RLLLRL} {LLLRRR LLRLRR LRLLRR RLLLRR LLRR__ LRLR__ RLLR__} {LRR___ RLR___ RRL___ RRRLL_} {RRRLR_ RRRRL_} {RRRRRL} {RRRRRR}]
+40:[{LLLLLLL} {LLLLLLR LLLLLRL} {LLLLLRR LLLLR__ LLLRL__ LLRLL__ LRLLL__ RLLLL__ LLLRRLL LLRLRLL LRLLRLL RLLLRLL} {LLLRRLR LLRLRLR LRLLRLR RLLLRLR LLLRRRL LLRLRRL LRLLRRL RLLLRRL LLRR__L LRLR__L RLLR__L} {LLLRRRR LLRLRRR LRLLRRR RLLLRRR LLRR__R LRLR__R RLLR__R LRR____ RLR____ RRL____ RRRLL__} {RRRLR__ RRRRL__} {RRRRRR_} {RRRRRRL} {RRRRRRR}]
